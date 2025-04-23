@@ -212,12 +212,21 @@ body {
   background-color: #f1f8f9;
 }
 
+#chead{
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  display: block;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
 .certifications span {
   font-size: 2.5rem;
   margin-left: 1rem;
   display: block;
   margin-bottom: 1.5rem;
   color: #333;
+  font-size: medium;
 }
 
 .boxes {
@@ -235,16 +244,14 @@ body {
   border-radius: 10px;
   text-align: center;
   color: white;
+  display: fle;
 }
 
 .box img{
   width: 200px;
 }
 
-.box span{
-  display: flex;
-  font-size: medium;
-}
+
 /* Contact Section */
 .contact {
   background-color: black;
@@ -265,6 +272,7 @@ body {
 .contact span {
   font-size: 1.5rem;
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {
