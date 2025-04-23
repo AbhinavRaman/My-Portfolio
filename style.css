@@ -1,0 +1,304 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: black;
+  color: white;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.sections {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.sections a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.sections a:hover {
+  color: #00ffff;
+}
+
+.burger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Home Section */
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  min-height: 80vh;
+  gap: 2rem;
+}
+
+.left, .right {
+  flex: 1 1 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.left {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.left_data {
+  max-width: 600px;
+}
+
+.left_data h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.left_data h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.left_data p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.imgDiv img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+/* Education Section */
+.education {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  min-height: 80vh;
+  gap: 2rem;
+}
+
+.educationLeft, .educationRight {
+  flex: 1 1 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.educationRight {
+  flex-direction: column;
+}
+
+.educationLeft img {
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+  border-radius: 15%;
+}
+
+.educationRight span {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.infoCard ul {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(52, 52, 131);
+  color: wheat;
+  cursor: pointer;
+}
+
+/* Project Section */
+.projects {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.projects span {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  display: block;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.pcards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.cards {
+  background-color: #e0f7fa;
+  height: auto;
+  width: 240px;
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.cards img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.cards p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Certification Section */
+.certifications {
+  padding: 2rem;
+  background-color: #f1f8f9;
+}
+
+.certifications span {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  display: block;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.box {
+  height: auto;
+  width: 240px;
+  padding: 1rem;
+  background-color: lightseagreen;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Contact Section */
+.contact {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact ul {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.contact li {
+  margin: 0.5rem 0;
+}
+
+.contact span {
+  font-size: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sections {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ccc;
+    padding: 1rem 0;
+    z-index: 999;
+  }
+
+  .sections.show {
+    display: flex;
+  }
+
+  .sections a {
+    color: black;
+    padding: 0.5rem 0;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .home,
+  .education {
+    flex-direction: column;
+  }
+
+  .imgDiv img,
+  .educationLeft img {
+    width: 200px;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .left_data,
+  .educationRight {
+    text-align: center;
+    align-items: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
