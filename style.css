@@ -92,6 +92,24 @@ body {
   color: #444;
 }
 
+.icons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.icons a {
+  font-size: 1.8rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icons a:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+
 .imgDiv img {
   width: 250px;
   height: 250px;
@@ -253,24 +271,111 @@ body {
 
 
 /* Contact Section */
+
 .contact {
-  background-color: black;
-  color: white;
-  padding: 2rem;
-  text-align: center;
+  background-color: #121212;
+  padding: 4rem 2rem;
+  color: #ffffff;
 }
 
-.contact ul {
-  list-style: none;
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
-.contact li {
-  margin: 0.5rem 0;
+.contact-info p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
 }
 
-.contact span {
+.contact-info .icons a {
+  margin-right: 10px;
   font-size: 1.5rem;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.contact-info .icons a:hover {
+  color: #00bcd4;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 0.75rem 1rem;
+  border: none;
+  background-color: #00bcd4;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0097a7;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.form-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 9999;
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.form-popup button {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 

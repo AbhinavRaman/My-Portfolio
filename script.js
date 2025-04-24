@@ -92,3 +92,31 @@ certBoxes.forEach(box => {
     if (imgSrc) window.open(imgSrc, '_blank');
   });
 });
+
+
+//form submission
+const form = document.getElementById('contactForm');
+const popup = document.getElementById('popup');
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: 'POST',
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
+      popup.style.display = 'block';
+      form.reset();
+    } else {
+      alert("Oops! Something went wrong.");
+    }
+  }).catch(error => {
+    alert("Error occurred while sending the message.");
+  });
+});

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
+  <script src="https://kit.fontawesome.com/ad2b5ab114.js" crossorigin="abhinav"></script>
 </head>
 <body>
   <nav class="navBar">
@@ -24,9 +25,17 @@
       <div class="left_data">
         <h1>Abhinav Raman</h1>
         <h2>Web Developer</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempore deserunt ratione repudiandae quis! Eius totam minus at tempore optio tenetur cumque ullam ipsam, doloremque excepturi mollitia magnam nemo ipsa!</p>
+        <p>A passionate Computer Science graduate and aspiring web developer, with a knack for crafting interactive and responsive websites. I love turning ideas into digital experiences using HTML, CSS, JavaScript, and exploring the world of Python, Java, and ethical hacking. <br>
+        I’m always curious, constantly learning, and ready to take on challenges that push my creativity and coding skills to the next level. Welcome to my digital space—feel free to explore my projects, resume, and more!</p>
+      </div>
+
+      <div class="icons">
+        <a href="https://github.com/AbhinavRaman" target="_blank"><i class="fa-brands fa-github fa-lg" style="color: #000000;"></i></a>
+        <a href="https://www.linkedin.com/in/abhinavraman26/" target="_blank"><i class="fa-brands fa-linkedin fa-lg" style="color: #0f5ee6;"></i></a>
+        <a href="https://www.hackerrank.com/profile/abhinavraman102" target="_blank"><i class="fa-brands fa-hackerrank fa-lg" style="color: #12720d;"></i></a>
       </div>
     </div>
+
     <div class="right">
       <div class="imgDiv">
         <img src="./Assets/My Photo.jpg" alt="My Image">
@@ -90,12 +99,42 @@
   </section>
 
   <footer class="contact" id="contact">
-    <ul>
-      <li>Phone: 7480042077</li>
-      <li>Email: abhinavraman102@gmail.com</li>
-    </ul>
-    <span>Thanks for visiting my portfolio.</span>
+    <div class="footer-container">
+      <!-- Left side: Contact Info -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p><strong>Name:</strong> Abhinav Raman</p>
+        <p><strong>Email:</strong> abhinavraman102@gmail.com</p>
+        <p><strong>Location:</strong> India</p>
+        <div class="icons">
+          <a href="https://github.com/AbhinavRaman" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/abhinavraman26/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.hackerrank.com/profile/abhinavraman102" target="_blank"><i class="fa-brands fa-hackerrank"></i></a>
+        </div>
+      </div>
+  
+      <!-- Right side: Contact Form -->
+      <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form id="contactForm" action="https://formsubmit.co/c4eb62876f2d777a3ded9ab5bb411335" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+        
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        
+        <!-- Popup message -->
+        <div class="form-popup" id="popup">
+          <p>Thanks! Your message has been sent. 😊</p>
+          <button onclick="document.getElementById('popup').style.display='none'">Close</button>
+        </div>
+        
+      </div>
+    </div>
   </footer>
+  
 
   <script src="script.js"></script>
 </body>
