@@ -92,24 +92,6 @@ body {
   color: #444;
 }
 
-.icons {
-  margin-top: 1.5rem;
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
-}
-
-.icons a {
-  font-size: 1.8rem;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.icons a:hover {
-  transform: scale(1.2);
-  opacity: 0.8;
-}
-
-
 .imgDiv img {
   width: 250px;
   height: 250px;
