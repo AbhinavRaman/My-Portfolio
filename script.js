@@ -32,6 +32,9 @@ document.getElementById('viewResume').addEventListener('click', () => {
 // Project card redirection links
 const projectLinks = [
   {
+    live: 'https://rawcdn.githack.com/AbhinavRaman/Mini-Projects/2e7dd9cdaa35cc438c003126fa7430859e28f4c1/Tailwind-Project/src/index.html'
+  },
+  {
     // github: 'https://github.com/AbhinavRaman/AmazonClone',
     live: 'https://rawcdn.githack.com/AbhinavRaman/AmazonClone/cd53aca7ebfa58647cc2c8b4604bf425d7025c05/index.html'
   },
@@ -42,14 +45,6 @@ const projectLinks = [
   {
     // github: 'https://github.com/AbhinavRaman/Mini-Projects/tree/main/Alarm-Clock-Project',
     live: 'https://rawcdn.githack.com/AbhinavRaman/Mini-Projects/68e6ae3c315fa4d8389c51b16d7b7d2f129a503a/Alarm-Clock-Project/index.html'
-  },
-  {
-    // github: 'https://github.com/AbhinavRaman/Mini-Projects/blob/main/To-do-List%20Project/index.html',
-    live: 'https://rawcdn.githack.com/AbhinavRaman/Mini-Projects/68e6ae3c315fa4d8389c51b16d7b7d2f129a503a/To-do-List%20Project/index.html'
-  },
-  {
-    // github: 'https://github.com/AbhinavRaman/Dentitech-Landing-Page',
-    live: 'https://rawcdn.githack.com/AbhinavRaman/Dentitech-Landing-Page/f65b3468126e160ea42f8ae6616811a5bc22a9ff/index.html'
   }
 ];
 
