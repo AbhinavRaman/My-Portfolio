@@ -32,6 +32,9 @@ document.getElementById('viewResume').addEventListener('click', () => {
 // Project card redirection links
 const projectLinks = [
   {
+    live: 'https://letssblog.netlify.app/'
+  },
+  {
     live: 'https://rawcdn.githack.com/AbhinavRaman/Mini-Projects/2e7dd9cdaa35cc438c003126fa7430859e28f4c1/Tailwind-Project/src/index.html'
   },
   {
