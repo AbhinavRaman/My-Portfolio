@@ -3,131 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio</title>
+  <title>Abhinav Raman | Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
-  <script src="https://kit.fontawesome.com/ad2b5ab114.js" crossorigin="abhinav"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ad2b5ab114.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav class="navBar">
-    <div class="logo">.Portfolio</div>
-    <div class="burger" id="burger">&#9776;</div>
-    <div class="sections" id="navLinks">
-      <a href="#home">Home</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Abhinav Raman</div>
+      <button class="burger" id="burger" aria-label="Open navigation menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <section class="home" id="home">
-    <div class="left">
-      <div class="left_data">
-        <h1>Abhinav Raman</h1>
-        <h2>Web Developer</h2>
-        <p>A passionate Computer Science graduate and aspiring web developer, with a knack for crafting interactive and responsive websites. I love turning ideas into digital experiences using HTML, CSS, JavaScript, and exploring the world of Python, Java, and ethical hacking. <br>
-        I’m always curious, constantly learning, and ready to take on challenges that push my creativity and coding skills to the next level. Welcome to my digital space—feel free to explore my projects, resume, and more!</p>
+  <main>
+    <section class="hero" id="home">
+      <canvas class="hero-bg"></canvas>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hi,<br>I'm <span class="accent">Abhinav Raman</span></h1>
+          <h2>Web Developer</h2>
+          <p>A passionate Computer Science graduate and aspiring web developer, with a knack for crafting interactive and responsive websites. I love turning ideas into digital experiences using HTML, CSS, JavaScript, and exploring the world of Python, Java, and ethical hacking.<br>
+          I'm always curious, constantly learning, and ready to take on challenges that push my creativity and coding skills to the next level.</p>
+        </div>
+        <img src="./Assets/My Photo.jpg" alt="Abhinav Raman" class="hero-img hero-img-large">
       </div>
-    </div>
+    </section>
 
-    <div class="right">
-      <div class="imgDiv">
-        <img src="./Assets/My Photo.jpg" alt="My Image">
+    <section class="education" id="education">
+      <h2>Education</h2>
+      <div class="education-content">
+        <img src="./Assets/20944805.jpg" alt="Education Illustration" class="education-img">
+        <div>
+          <ul>
+            <li>B.Tech (2024): 8.56 CGPA</li>
+          </ul>
+          <a href="./Assets/Resume.pdf" class="btn" target="_blank" rel="noopener">View Resume</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="education" id="education">
-    <div class="educationLeft">
-      <img src="./Assets/20944805.jpg" alt="img">
-    </div>
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <video src="./Assets/Cookie Cooks Project.mp4" muted autoplay loop></video>
+          <p>Cookie Cooks UI Responsive</p>
+        </div>
+        <div class="project-card">
+          <video src="./Assets/Amazon Landing Page.mp4" muted autoplay loop></video>
+          <p>Amazon Landing Page UI</p>
+        </div>
+        <div class="project-card">
+          <video src="./Assets/Weather Web App.mp4" muted autoplay loop></video>
+          <p>Weather Web App Project</p>
+        </div>
+        <div class="project-card">
+          <video src="./Assets/Clock Project.mp4" muted autoplay loop></video>
+          <p>Alarm Clock Project</p>
+        </div>
+      </div>
+    </section>
 
-    <div class="educationRight">
-      <span>Education</span>
-      <div class="infoCard">
-        <ul>
-          <li>B.tech (2024) : 8.56 CGPA</li>
-        </ul>
+    <section class="certifications" id="certifications">
+      <h2>Certifications</h2>
+      <div class="certification-grid">
+        <div class="cert-card">
+          <img src="./Assets/JavaScript (Basic) certificate HackerRank.png" alt="JavaScript(Basic) HackerRank Certificate">
+          <span>JavaScript (Basic) HackerRank Certificate</span>
+        </div>
+        <div class="cert-card">
+          <img src="./Assets/Web Development Training - Certificate of Completion_page-0001.jpg" alt="Web Development">
+          <span>Web Development Training Certificate (Internshala)</span>
+        </div>
       </div>
-      <div class="buttons">
-        <button id="viewResume">View Resume</button>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <section class="projects" id="projects">
-    <span>Projects</span>
-    <div class="pcards">
-      <div class="cards">
-        <video src="./Assets/Cookie Cooks Project.mp4" muted autoplay loop></video>
-        <p>Cookie Cooks UI Responsive</p>
-      </div>
-      <div class="cards">
-        <video src="./Assets/Amazon Landing Page.mp4" muted autoplay loop></video>
-        <p>Amazon Landing Page UI</p>
-      </div>
-      <div class="cards">
-        <video src="./Assets/Weather Web App.mp4" muted autoplay loop></video>
-        <p>Weather Web App Project</p>
-      </div>
-      <div class="cards">
-        <video src="./Assets/Clock Project.mp4" muted autoplay loop></video>
-        <p>Alarm Clock Project</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="certifications" id="certifications">
-    <p id="chead">Certifications</p>
-    <div class="boxes">
-      <div class="box">
-        <img src="./Assets/JavaScript (Basic) certificate HackerRank.png" alt="JavaScript(Basic) HackerRank Certificate">
-        <span>JavaScript (Basic) HackerRank Certificate</span>
-      </div>
-      <div class="box">
-        <img src="./Assets/Web Development Training - Certificate of Completion_page-0001.jpg" alt="Web Development">
-        <span>Web Development Training Certificate (Internshala)</span>
-      </div>
-    </div>
-  </section>
-
-  <footer class="contact" id="contact">
-    <div class="footer-container">
-      <!-- Left side: Contact Info -->
+  <footer id="contact">
+    <div class="footer-content">
       <div class="contact-info">
-        <h2>Get in Touch</h2>
-        <p><strong>Name:</strong> Abhinav Raman</p>
-        <p><strong>Email:</strong> abhinavraman102@gmail.com</p>
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:abhinavraman102@gmail.com">abhinavraman102@gmail.com</a></p>
         <p><strong>Location:</strong> India</p>
-        <div class="icons">
-          <a href="https://github.com/AbhinavRaman" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/abhinavraman26/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.hackerrank.com/profile/abhinavraman102" target="_blank"><i class="fa-brands fa-hackerrank"></i></a>
+        <div class="social-links">
+          <a href="https://github.com/AbhinavRaman" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/abhinavraman26/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.hackerrank.com/profile/abhinavraman102" target="_blank" aria-label="HackerRank"><i class="fa-brands fa-hackerrank"></i></a>
         </div>
       </div>
-  
-      <!-- Right side: Contact Form -->
-      <div class="contact-form">
-        <h2>Contact Me</h2>
-        <form id="contactForm" action="https://formsubmit.co/c4eb62876f2d777a3ded9ab5bb411335" method="POST">
-          <input type="hidden" name="_captcha" value="false">
-        
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-        
-        <!-- Popup message -->
-        <div class="form-popup" id="popup">
-          <p>Thanks! Your message has been sent. 😊</p>
-          <button onclick="document.getElementById('popup').style.display='none'">Close</button>
-        </div>
-        
-      </div>
+      <form class="contact-form" id="contactForm" action="https://formsubmit.co/c4eb62876f2d777a3ded9ab5bb411335" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    <div class="footer-bottom">
+      <small>&copy; 2024 Abhinav Raman. All rights reserved.</small>
     </div>
   </footer>
-  
 
   <script src="script.js"></script>
 </body>
