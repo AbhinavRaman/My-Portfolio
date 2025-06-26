@@ -136,6 +136,7 @@ header {
   font-size: 1.1rem;
   line-height: 1.7;
   margin: 0 0 2rem 0;
+  text-align: justify;
 }
 .hero-text .btn {
   background: var(--accent);
@@ -419,9 +420,31 @@ footer {
   .burger {
     display: block;
   }
+  .hero-content {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
   .hero-img.hero-img-large {
     width: 180px;
     height: 180px;
+    order: 2;
+    margin: 1.2rem auto 0 auto;
+    display: block;
+  }
+  .hero-text {
+    order: 1;
+  }
+  .hero {
+    padding-bottom: 2.5rem;
+  }
+  .hero-text p {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+  .hero-text h1, .hero-text h2 {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
   }
 }
 @media (max-width: 500px) {
@@ -438,5 +461,22 @@ footer {
   .hero-img.hero-img-large {
     width: 120px;
     height: 120px;
+    margin-top: 1.2rem;
   }
+  .hero {
+    padding-bottom: 2.2rem;
+  }
+  .hero-text h1, .hero-text h2 {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+  .hero-text p {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+}
+
+/* Prevent headings from going behind sticky navbar */
+#home, #education, #projects, #certifications, #contact {
+  scroll-margin-top: 80px;
 }
