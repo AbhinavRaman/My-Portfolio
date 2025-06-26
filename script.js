@@ -25,7 +25,7 @@ sectionLinks.forEach(link => {
 
 //Resume Buttons
 document.getElementById('viewResume').addEventListener('click', () => {
-  window.open('./Assets/Abhinav_Raman_Resume.pdf', '_blank');
+  window.open('./Assets/Resume.pdf', '_blank');
 });
 
 
