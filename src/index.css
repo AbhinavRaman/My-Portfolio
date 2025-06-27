@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for animated background */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Prevent headings from going behind sticky navbar */
+#home, #education, #projects, #certifications, #contact {
+  scroll-margin-top: 80px;
+}
+
+/* Hexagon clip path for hero image */
+.hero-img-hexagon {
+  clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
+} 

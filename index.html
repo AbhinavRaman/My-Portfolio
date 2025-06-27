@@ -1,118 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abhinav Raman | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/ad2b5ab114.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Abhinav Raman</div>
-      <button class="burger" id="burger" aria-label="Open navigation menu">&#9776;</button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <canvas class="hero-bg"></canvas>
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1>Hi,<br>I'm <span class="accent">Abhinav Raman</span></h1>
-          <h2>Web Developer</h2>
-          <p>A passionate Computer Science graduate and aspiring web developer, with a knack for crafting interactive and responsive websites. I love turning ideas into digital experiences using HTML, CSS, JavaScript, and exploring the world of Python, Java, and ethical hacking.<br>
-          I'm always curious, constantly learning, and ready to take on challenges that push my creativity and coding skills to the next level.</p>
-        </div>
-        <img src="./Assets/My Photo.jpg" alt="Abhinav Raman" class="hero-img hero-img-large">
-      </div>
-    </section>
-
-    <section class="education" id="education">
-      <h2>Education</h2>
-      <div class="education-content">
-        <div>
-          <ul>
-            <li><strong>B.Tech (CSE):</strong> Bengal College of Engineering and Technology, Durgapur – 8.56 CGPA [2024]</li>
-            <li><strong>Senior Secondary:</strong> R.J.R.R.S.D College, Madhubani – 62.4 %</li>
-            <li><strong>Secondary:</strong> St. Xavier's English High School, Jaynagar – 9.8 CGPA</li>
-          </ul>
-          <a href="./Assets/Resume.pdf" class="btn" target="_blank" rel="noopener">View Resume</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="projects" id="projects">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <video src="./Assets/Cookie Cooks Project.mp4" muted autoplay loop></video>
-          <p>Cookie Cooks UI Responsive</p>
-        </div>
-        <div class="project-card">
-          <video src="./Assets/Amazon Landing Page.mp4" muted autoplay loop></video>
-          <p>Amazon Landing Page UI</p>
-        </div>
-        <div class="project-card">
-          <video src="./Assets/Weather Web App.mp4" muted autoplay loop></video>
-          <p>Weather Web App Project</p>
-        </div>
-        <div class="project-card">
-          <video src="./Assets/Clock Project.mp4" muted autoplay loop></video>
-          <p>Alarm Clock Project</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="certifications" id="certifications">
-      <h2>Certifications</h2>
-      <div class="certification-grid">
-        <div class="cert-card">
-          <img src="./Assets/JavaScript (Basic) certificate HackerRank.png" alt="JavaScript(Basic) HackerRank Certificate">
-          <span>JavaScript (Basic) HackerRank Certificate</span>
-        </div>
-        <div class="cert-card">
-          <img src="./Assets/Web Development Training - Certificate of Completion_page-0001.jpg" alt="Web Development">
-          <span>Web Development Training Certificate (Internshala)</span>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer id="contact">
-    <div class="footer-content">
-      <div class="contact-info">
-        <h2>Contact</h2>
-        <p><strong>Email:</strong> <a href="mailto:abhinavraman102@gmail.com">abhinavraman102@gmail.com</a></p>
-        <p><strong>Location:</strong> India</p>
-        <div class="social-links">
-          <a href="https://github.com/AbhinavRaman" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/abhinavraman26/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.hackerrank.com/profile/abhinavraman102" target="_blank" aria-label="HackerRank"><i class="fa-brands fa-hackerrank"></i></a>
-        </div>
-      </div>
-      <form class="contact-form" id="contactForm" action="https://formsubmit.co/c4eb62876f2d777a3ded9ab5bb411335" method="POST">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-    <div class="footer-bottom">
-      <small>&copy; 2024 Abhinav Raman. All rights reserved.</small>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html> 
