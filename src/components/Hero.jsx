@@ -96,66 +96,6 @@ const Hero = () => {
           className="w-80 h-80 lg:w-80 lg:h-80 md:w-44 md:h-44 w-32 h-32 object-cover rounded-3xl hero-img-hexagon border-4 border-accent shadow-2xl shadow-accent/20 order-2 lg:order-none"
         />
       </div>
-
-      {/* Mobile responsive styles */}
-      <style jsx>{`
-        @media (max-width: 1100px) {
-          .hero-content {
-            flex-direction: column;
-            gap: 2.5rem;
-            text-align: center;
-          }
-          .hero-img {
-            margin: 0 auto;
-          }
-        }
-        @media (max-width: 700px) {
-          .hero-content {
-            flex-direction: column;
-            gap: 1.5rem;
-            text-align: center;
-          }
-          .hero-img {
-            order: 2;
-            margin: 1.2rem auto 0 auto;
-            display: block;
-            width: 180px;
-            height: 180px;
-          }
-          .hero-text {
-            order: 1;
-          }
-          .hero {
-            padding-bottom: 2.5rem;
-          }
-          .hero-text h1, .hero-text h2 {
-            padding-left: 1.2rem;
-            padding-right: 1.2rem;
-          }
-          .hero-text p {
-            padding-left: 1.2rem;
-            padding-right: 1.2rem;
-          }
-        }
-        @media (max-width: 500px) {
-          .hero-img {
-            width: 120px;
-            height: 120px;
-            margin-top: 1.2rem;
-          }
-          .hero {
-            padding-bottom: 2.2rem;
-          }
-          .hero-text h1, .hero-text h2 {
-            padding-left: 0.7rem;
-            padding-right: 0.7rem;
-          }
-          .hero-text p {
-            padding-left: 0.7rem;
-            padding-right: 0.7rem;
-          }
-        }
-      `}</style>
     </section>
   )
 }

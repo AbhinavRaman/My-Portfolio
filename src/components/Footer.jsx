@@ -36,6 +36,11 @@ const Footer = () => {
       href: 'https://www.hackerrank.com/profile/abhinavraman102',
       icon: 'fa-brands fa-hackerrank',
       label: 'HackerRank'
+    },
+    {
+      href: 'https://leetcode.com/u/abhi_23raman/',
+      icon: 'fa-solid fa-code',
+      label: 'LeetCode'
     }
   ]
 
