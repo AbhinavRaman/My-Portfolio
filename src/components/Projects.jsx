@@ -58,30 +58,52 @@ const Projects = () => {
   }, [])
 
   return (
-    <section id="projects" className="py-16 px-6 bg-[#f4f7fa]">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 text-[#111]">
+    <section id="projects" className="py-16 px-6 bg-bg">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl font-bold text-center mb-16 text-text">
           Projects
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {projects.map((project) => (
-            <div 
-              key={project.id}
-              className="project-card bg-card-bg rounded-xl p-5 flex flex-col items-center transition-all duration-200 hover:scale-105 hover:shadow-xl"
-            >
-              <video 
-                src={project.video} 
-                muted 
-                autoPlay 
-                loop 
-                className="w-full h-36 object-cover rounded-lg mb-4 bg-gray-200"
-              />
-              <p className="text-text text-center font-medium">
-                {project.title}
-              </p>
-            </div>
-          ))}
+        {/* Timeline Container */}
+        <div className="relative">
+          {/* Central Timeline Line */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-accent to-accent/50 hidden md:block"></div>
+          
+          {/* Timeline Items */}
+          <div className="space-y-12">
+            {projects.map((project, index) => (
+              <div 
+                key={project.id}
+                className={`relative flex items-center ${
+                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                } flex-col`}
+              >
+                {/* Timeline Dot */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white shadow-lg hidden md:block z-10"></div>
+                
+                {/* Project Card */}
+                <div 
+                  className={`project-card bg-card-bg rounded-xl p-6 flex flex-col items-center transition-all duration-300 hover:scale-105 hover:shadow-xl w-full md:w-5/12 ${
+                    index % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'
+                  }`}
+                >
+                  <video 
+                    src={project.video} 
+                    muted 
+                    autoPlay 
+                    loop 
+                    className="w-full h-48 object-cover rounded-lg mb-4 bg-gray-200"
+                  />
+                  <h3 className="text-text text-center font-semibold text-lg mb-2">
+                    {project.title}
+                  </h3>
+                  <div className="text-accent text-sm font-medium">
+                    Project #{index + 1}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
