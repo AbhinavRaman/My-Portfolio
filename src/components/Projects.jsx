@@ -4,24 +4,30 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: 'LetssBlog',
+      video: '/Assets/LetsBlog.mp4',
+      link: 'https://letssblog.netlify.app/'
+    },
+    {
+      id: 2,
       title: 'Cookie Cooks UI Responsive',
       video: '/Assets/Cookie Cooks Project.mp4',
       link: 'https://rawcdn.githack.com/AbhinavRaman/Mini-Projects/2e7dd9cdaa35cc438c003126fa7430859e28f4c1/Tailwind-Project/src/index.html'
     },
     {
-      id: 2,
+      id: 3,
       title: 'Amazon Landing Page UI',
       video: '/Assets/Amazon Landing Page.mp4',
       link: 'https://rawcdn.githack.com/AbhinavRaman/AmazonClone/cd53aca7ebfa58647cc2c8b4604bf425d7025c05/index.html'
     },
     {
-      id: 3,
+      id: 4,
       title: 'Weather Web App Project',
       video: '/Assets/Weather Web App.mp4',
       link: 'https://rawcdn.githack.com/AbhinavRaman/Weather-Web-App/403b93ebaa74e9703f22f863a368531934414d63/index.html'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Alarm Clock Project',
       video: '/Assets/Clock Project.mp4',
       link: 'https://rawcdn.githack.com/AbhinavRaman/Mini-Projects/68e6ae3c315fa4d8389c51b16d7b7d2f129a503a/Alarm-Clock-Project/index.html'
