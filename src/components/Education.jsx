@@ -36,7 +36,7 @@ const Education = () => {
           </ul>
           
           <a 
-            href="/Assets/Resume3.pdf" 
+            href="/Assets/Resume.pdf" 
             target="_blank" 
             rel="noopener"
             className="inline-block bg-accent text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 hover:bg-accent-hover shadow-lg"
